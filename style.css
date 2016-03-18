@@ -1,0 +1,66 @@
+.reveal
+{
+  color: gray;
+  cursor: pointer;
+}
+
+li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+.check
+{
+	cursor: pointer;
+	display: inline-block;
+}
+
+#main
+{
+	width: 500px;
+}
+
+#english, #pinyin, #chinese
+{
+	text-transform: lowercase;
+	padding: 10px;
+	font-size: 1.2em;
+	border: solid gray 1px;
+}
+
+.btn
+{
+	width: 130px;
+}
+
+.opt
+{
+	border: none;
+	text-transform: lowercase;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+.selected
+{
+	font-style: bold;
+}
+
+.selected:hover
+{
+	font-style: bold;
+}
+
+ul, ul li
+{
+	margin: 0;
+	padding: 0;
+}
+
+#chinese
+{
+	font-size: 2em;
+}
