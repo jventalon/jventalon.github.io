@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HSK</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<h1>Chinese</h1>
+							<h2>HSK vocabulary review</h2>
+							<p>
+								<form>
+									<label class="check"><input type="checkbox" name="level" value="1" onchange="toggleCheckbox(this)" checked> Level 1</label>
+									<label class="check"><input type="checkbox" name="level" value="2" onchange="toggleCheckbox(this)"> Level 2</label>
+									<label class="check"><input type="checkbox" name="level" value="3" onchange="toggleCheckbox(this)"> Level 3</label>
+									<label class="check"><input type="checkbox" name="level" value="4" onchange="toggleCheckbox(this)"> Level 4</label>
+									<label class="check"><input type="checkbox" name="level" value="5" onchange="toggleCheckbox(this)"> Level 5</label>
+									<label class="check"><input type="checkbox" name="level" value="6" onchange="toggleCheckbox(this)"> Level 6</label>
+								</form>
+							</p>
+						</header>
+						<h3>
+							Chinese
+						</h3>
+						<input class="opt selected" type="button" onclick="simplified()" value="simplified"/> / <input class="opt" type="button" onclick="traditional()" value="traditional"/>
+						<p id="chinese" class="well">
+						</p>
+						<h3>
+							Pinyin
+						</h3>
+						<p id="pinyin" class="well reveal" onclick="revealpinyin()">
+						</p>
+						<h3>
+							English
+						</h3>
+						<p id="english" class="well reveal" onclick="revealenglish()">
+						</p>
+						<nav>
+							<ul>
+								<li><input class="btn" type="button" onclick="previous()" value="Previous"/></li>
+								<li><input class="btn" type="button" onclick="rand()" value="Random"/></li>
+								<li><input class="btn" type="button" onclick="next()" value="Next"/></li>
+							</ul>
+						</nav>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Justine Ventalon</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+			<script src="script.js" type="text/javascript"></script>
+	</body>
+</html>
