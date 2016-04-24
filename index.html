@@ -18,12 +18,13 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">Justine Ventalon</a></h1>
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="#banner">Justine Ventalon</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#experience">Experience</a></li>
+							<!-- TODO: colorer les prties dans le menu quand on les visualise -->
+							<li><a href="#about_me">About me</a></li>
+							<!--<li><a href="#experience">Experience</a></li>
 							<li><a href="#education">Education</a></li>
 							<li>
 								<a href="#projects">Projects</a>
@@ -32,9 +33,9 @@
 									<li><a href="#project2">Project 2</a></li>
 									<li><a href="#project3">Project 3</a></li>
 								</ul>
-							</li>
-							<li><a href="#education">C.V.</a></li>
-							<li><a href="#contact">Contact</a></li>
+							</li>-->
+							<li><a href="#cv">C.V.</a></li>
+							<!-- <li><a href="#contact">Contact</a></li> -->
 						</ul>
 					</nav>
 				</header>
@@ -44,65 +45,59 @@
 					<div class="content">
 						<header>
 							<h2>Justine Ventalon</h2>
+							<ul class="icons">
+								<li><a href="mailto:justine.ventalon@gmail.com" class="icon alt fa-envelope"><span class="label">E-mail</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jventalon" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="http://fr.viadeo.com/fr/profile/justine.ventalon" class="icon viadeo"><img src="images/viadeo.svg" alt="" /></a></li>
+								<li><a href="https://github.com/jventalon" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="skype:justine.ventalon?userinfo" class="icon alt fa-skype"><span class="label">Skype</span></a></li>
+							</ul>
 							<p>
-								<ul class="icons">
-									<li><a href="#" class="icon alt fa-envelope"><span class="label">E-mail</span></a></li>
-									<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon alt fa-skype"><span class="label">Skype</span></a></li>
-									<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-								</ul>
+								Final year student in Computer Science<br />
+								Seeking a 6-month internship as junior engineer
 							</p>
-							
-							<p>Final year student in Computer Engineering<br />
-							Seeking a 6-month internship as junior engineer<br/>
-							starting in September 2016</p>
-							<br/>
+							<br />
 							<p>
-								<ul class="icons">
-									<li><a href="#cv" class="icon alt fa-file-text"></a></li>
-									<br/><li><span class="label">C.V.</span></li>
-								</ul>
+								<a id="cv-link" href="#cv">
+									<span id="cv-icon" class="icon major alt fa-file-text"></span><br />
+									<span class="legend">C.V.</span>
+								</a>
 							</p>
 						</header>
 						<span class="image circle-img"><img src="images/profile.jpg" alt="justine ventalon" /></span>
 					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
+					<!-- remove dotted border on goto buttons when going to another page -->
+					<a href="#about_me" class="goto-next scrolly">Next</a>
 				</section>
 
-			<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+			<!-- About me -->
+				<section id="about_me" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="images/banner1.jpg" alt="" /></span>
 					<div class="content">
 						<div class="container">
 							<div class="row">
 								<div class="4u 12u$(medium)">
 									<header>
 										<h2>About me</h2>
-										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+										<p>French student in Computer Science with a specialization in Image, Interaction and Virtual Reality</p>
 									</header>
 								</div>
 								<div class="4u 12u$(medium)">
-									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-									augue varius tempus lobortis porttitor accumsan consequat
-									adipiscing lorem dolor.</p>
+									<p>Passionate about new technologies, I am studying at the <a href="https://www.utbm.fr/en/utbm.html" alt="University of Technology of Beflort-Montbéliard">University of Technology of Belfort-Montbéliard (UTBM)</a> in France, towards a "Diplôme d'ingénieur", a 5-year degree equivalent to a Master of Engineering degree.<br/>
+									For my last semester before graduating, I am seeking a 6-month internship in Computer Science, starting in September 2016.</p>
 								</div>
 								<div class="4u$ 12u$(medium)">
-									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
-									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-									ipsum dolor nullam.</p>
+									<p>Actually in China, I am taking a gap semester to attend the "Language, Culture and Innovation" program at the <a href="http://utseus.com/en/" alt="Sino-European School of Technology of Shanghai University">Sino-European School of Technology of Shanghai University (UTSEUS)</a>.<br/>
+									I chose to follow this program because I love to learn about new cultures and work in multicultural and multidisciplinary teams.</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<a href="#experience" class="goto-next scrolly">Next</a>
+					<!-- <a href="#experience" class="goto-next scrolly">Next</a> -->
+					<a href="#cv" class="goto-next scrolly">Next</a>
 				</section>
 			
-			<!-- Experience -->
+			<!-- Experience 
 				<section id="experience" class="spotlight style3 left">
 					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
 					<div class="content">
@@ -117,8 +112,8 @@
 					</div>
 					<a href="#education" class="goto-next scrolly">Next</a>
 				</section>
-				
-			<!-- Education -->
+-->
+			<!-- Education 
 				<section id="education" class="spotlight style2 right">
 					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
 					<div class="content">
@@ -133,8 +128,8 @@
 					</div>
 					<a href="#projects" class="goto-next scrolly">Next</a>
 				</section>
-
-			<!-- Projects -->
+-->
+			<!-- Projects 
 				<section id="projects" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
@@ -182,35 +177,86 @@
 						</footer>
 					</div>
 				</section>
+-->
+			<!-- CV -->
+				<section id="cv" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="images/banner2.jpg" alt="" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								<div class="4u 12u$(medium)">
+									<header>
+										<h2>C.V.</h2>
+										<p>Here you can download my Curriculum Vitae in PDF file.</p>
+									</header>
+								</div>
+								<!-- TODO: add links to CV -->
+								<div class="4u 12u$(medium)">
+									<p class="align-center">
+										<a id="cv-link" href="CV_Justine_Ventalon_EN.pdf">
+											<span id="cv-icon" class="icon major alt fa-file-text"></span><br />
+											<span class="legend">C.V. in English</span>
+										</a>
+									</p>
+								</div>
+								<div class="4u$ 12u$(medium)">
+									<p class="align-center">
+										<a id="cv-link" href="#cv">
+											<span id="cv-icon" class="icon major alt fa-file-text"></span><br />
+											<span class="legend">C.V. in French</span>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <a href="#contact" class="goto-next scrolly">Next</a> -->
+					<a href="#footer" class="goto-next scrolly">Next</a>
+				</section>
 
-			<!-- Five -->
+			<!-- Contact 
 				<section id="contact" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
 							<h2>Contact</h2>
-							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+							<p>Feel free to contact me using the form below.</p>
 						</header>
+						TODO: script php de reception du message
 						<form method="post" action="#" class="container 50%">
 							<div class="row uniform 50%">
-								<div class="12u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Name Address" /></div>
-								<div class="12u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
+								<div class="6u 12u$(xsmall)">
+									<input type="text" name="name" id="name" value="" placeholder="Your Name" />
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<input type="email" name="email" id="email" value="" placeholder="Your Email Address" />
+								</div>
+								<div class="12u$">
+									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								TODO: ajouter captcha
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</div>
 							</div>
 						</form>
 					</div>
 				</section>
+-->
 
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon alt fa-envelope"><span class="label">E-mail</span></a></li>
-						<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon alt fa-skype"><span class="label">Skype</span></a></li>
-						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="mailto:justine.ventalon@gmail.com" class="icon alt fa-envelope"><span class="label">E-mail</span></a></li>
+							<li><a href="https://www.linkedin.com/in/jventalon" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="http://fr.viadeo.com/fr/profile/justine.ventalon" class="icon viadeo"><img src="images/viadeo.svg" alt="" /></a></li>
+							<li><a href="https://github.com/jventalon" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="skype:justine.ventalon?userinfo" class="icon alt fa-skype"><span class="label">Skype</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Justine Ventalon (2016)</li>
+						<li>&copy; Justine Ventalon - 2016</li>
 					</ul>
 				</footer>
 
