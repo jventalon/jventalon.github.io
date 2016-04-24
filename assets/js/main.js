@@ -325,11 +325,11 @@
 			}
 
 			// Nav.
-			/*var $nav_li = $('#nav li');
+			var $nav_li = $('#nav li');
 
 			// Scrolly-fy links.
-				$nav_li
-					.on('click', function(e) {
+				$nav_li[1].addClass('active');
+					/*.on('click', function(e) {
 
 						var t = $(this),
 							href = t.attr('href');
@@ -340,7 +340,7 @@
 						e.preventDefault();
 
 						// Clear active and lock scrollzer until scrolling has stopped
-							$nav_a
+							$nav_li
 								.removeClass('active')
 								.addClass('scrollzer-locked');
 
