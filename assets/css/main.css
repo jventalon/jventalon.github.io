@@ -1594,7 +1594,7 @@
 			border-bottom: dotted 1px;
 		}
 
-		.icon:hover, #cv-link:hover, #cv-icon:hover, .goto-next:hover
+		.icon:hover, .cv-link:hover, .cv-icon:hover, .goto-next:hover
 		{
 			border-bottom: none;
 			cursor: pointer;
