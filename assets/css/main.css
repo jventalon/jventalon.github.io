@@ -1,5 +1,16 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('assets/fonts/Roboto.eot');
+    src: url('assets/fonts/Roboto.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Roboto.woff') format('woff'),
+         url('assets/fonts/Roboto.ttf') format('truetype'),
+         url('assets/fonts/Roboto.svg#roboto') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*
 	Landed by HTML5 UP
@@ -3269,6 +3280,11 @@
 
 /* Header */
 
+	#banner-link
+	{
+		visibility: hidden;
+	}
+
 	#page-wrapper {
 		padding-top: 3.5em;
 	}
@@ -3333,7 +3349,7 @@
 							margin-right: 0.5em;
 						}
 
-					#header nav ul li.active > a, #header nav ul li.active > span {
+					#header nav ul li a.active {
 						color: #5480f1;
 					}
 
@@ -3444,7 +3460,7 @@
 
 	#footer {
 		background: #272833;
-		padding: 6em 0;
+		padding: 3em 0;
 		text-align: center;
 	}
 

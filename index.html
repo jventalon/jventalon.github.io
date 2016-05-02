@@ -22,8 +22,8 @@
 					<h1 id="logo"><a href="#banner">Justine Ventalon</a></h1>
 					<nav id="nav">
 						<ul>
-							<!-- TODO: colorer les prties dans le menu quand on les visualise -->
-							<li><a href="#about_me">About me</a></li>
+							<li id="banner-link"><a href="#banner" class="skel-layers-ignoreHref"><span>Home</span></a></li>
+							<li><a href="#about_me" id="about_me-link" class="skel-layers-ignoreHref"><span>About me</span></a></li>
 							<!--<li><a href="#experience">Experience</a></li>
 							<li><a href="#education">Education</a></li>
 							<li>
@@ -34,7 +34,7 @@
 									<li><a href="#project3">Project 3</a></li>
 								</ul>
 							</li>-->
-							<li><a href="#cv">C.V.</a></li>
+							<li><a href="#cv" id="cv-link" class="skel-layers-ignoreHref"><span>C.V.</span></a></li>
 							<!-- <li><a href="#contact">Contact</a></li> -->
 						</ul>
 					</nav>
@@ -190,7 +190,6 @@
 										<p>Here you can download my Curriculum Vitae in PDF file.</p>
 									</header>
 								</div>
-								<!-- TODO: add links to CV -->
 								<div class="4u 12u$(medium)">
 									<p class="align-center">
 										<a id="cv-link" href="CV_Justine_Ventalon_EN.pdf">
@@ -267,6 +266,7 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->

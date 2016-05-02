@@ -325,11 +325,13 @@
 			}
 
 			// Nav.
-			var $nav_li = $('#nav li');
+			var $nav_a = $('#nav li a');
+			//alert($nav_a);
 
 			// Scrolly-fy links.
-				$nav_li[1].addClass('active');
-					/*.on('click', function(e) {
+				$nav_a
+					.scrolly()
+					.on('click', function(e) {
 
 						var t = $(this),
 							href = t.attr('href');
@@ -340,15 +342,30 @@
 						e.preventDefault();
 
 						// Clear active and lock scrollzer until scrolling has stopped
-							$nav_li
+							$nav_a
 								.removeClass('active')
 								.addClass('scrollzer-locked');
 
 						// Set this link to active
 							t.addClass('active');
 
-					});*/
+					});
 
+			// Initialize scrollzer.
+				var ids = [];
+
+				$nav_a.each(function() {
+
+					var href = $(this).attr('href');
+
+					if (href[0] != '#')
+						return;
+
+					ids.push(href.substring(1));
+
+				});
+
+				$.scrollzer(ids, { pad: 200, lastHack: true });
 	});
 
 })(jQuery);
