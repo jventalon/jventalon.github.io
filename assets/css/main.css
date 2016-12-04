@@ -1589,12 +1589,14 @@
 		text-decoration: none;
 	}
 
-		a:hover {
+		a:hover 
+		{
 			color: #96aadd !important;
 			border-bottom: dotted 1px;
+			cursor: pointer;
 		}
 
-		.icon:hover, .cv-link:hover, .cv-icon:hover, .goto-next:hover
+		.icon:hover, .cv-link:hover, .goto-next:hover, .icon:before
 		{
 			border-bottom: none;
 			cursor: pointer;
