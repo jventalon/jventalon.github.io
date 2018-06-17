@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--<link rel="stylesheet" href="assets/css/forms.css" />-->
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -40,6 +41,8 @@
 									<li><a href="#sushi_bar">Sushi bar</a></li>
 									<li><a href="#concept">Concept</a></li>
 									<li><a href="#city_designer">City designer</a></li>
+                                    <li><a href="#expenses_manager">Expenses manager</a></li>
+                                    <li><a href="#weather_spirit">Wheather spirit</a></li>
 								</ul>
 							</li>-->
 							<li><a id="cv-link" href="#cv"><span>C.V.</span></a></li>
@@ -61,8 +64,8 @@
 								<li><a href="skype:justine.ventalon?userinfo" class="icon alt fa-skype"><span class="label">Skype</span></a></li>
 							</ul>
 							<p>
-								Final year student in Computer Science<br />
-								Seeking a junior engineer position - Available from March 2017
+								Web Software Engineer<br />
+                                currently working at Capgemini
 							</p>
 							<br />
 							<p>
@@ -87,19 +90,19 @@
 								<div class="4u 12u$(medium)">
 									<header>
 										<h2>About me</h2>
-										<p>French student in Computer Science with a specialization in Image, Interaction and Virtual Reality</p>
+                                        <p>French Software Engineer, currently working on Java EE web applications at <a href="https://www.capgemini.com/">Capgemini</a> in Clermont-Ferrand (France) since March 2017.</p>
 									</header>
-									<p>
-										Interested in a wide range of new technologies, including Web and Mobile development and Virtual and Augmented Reality.
-									</p>
+									<p>Interested in a wide range of new technologies, including Web and Mobile development and Virtual and Augmented Reality.</p>
 								</div>
 								<div class="4u 12u$(medium)">
-									<p>Passionate about new technologies, I am studying at the <a href="https://www.utbm.fr/en/utbm.html">University of Technology of Belfort-Montbéliard (UTBM)</a> in France, towards a "Diplôme d'ingénieur", a 5-year degree equivalent to a Master of Engineering degree.</P>
-									<p>Currently doing my final 6-month internship before graduating, I am seeking a junior engineer position for March 2017.</p>
+                                    <p>In 2017, I obtained a 'Diplôme d'ingénieur en Informatique', a 5-year degree equivalent to a Master of Engineering degree in Computer Science, from the <a href="https://www.utbm.fr/">University of Technology of Belfort-Montbéliard</a> (France).</p>
+                                    <p>Now I work on web applications maintenance for <a href="https://www.schneider-electric.com/">Schneider-Electric</a> in different business areas, such as quote configuration and after-sales service. My activities include customer needs analysis, functional and technical specifications writing, testing, as well as help to the offshore team members located in India.</p>
+                                    <!--<p>I am working with technologies such as JavaEE, Oracle, Spring, Struts, JSF and PrimeFaces.</p>
+                                    <p> I am also very interested by PHP and JavaScript technologies.</p>-->
 								</div>
 								<div class="4u$ 12u$(medium)">
-									<p>As part of my studies, I did four semesters abroad in different countries (United Kingdom, Peru, Canada and China), for either studying or internships. I chose to take these opportunities because it is always very enriching to learn about new cultures and work in multicultural and multidisciplinary teams.</p>
-									<p>I love to learn new things and am open to new opportunities.</p>
+                                    <p>I love to travel and discover new cultures. I think it is always very enriching to meet new people and work in multicultural and multidisciplinary teams. As part of my studies, I did four semesters abroad in different countries (United Kingdom, Peru, Canada and China), for studying and internships.</p>
+                                    <p>My native language is French and I can speak English and Spanish. I am also learning Chinese, German and Portuguese.</p>
 								</div>
 							</div>
 						</div>
@@ -108,9 +111,9 @@
 					<a href="#cv" class="goto-next scrolly">Next</a>
 				</section>
 			
-			<!-- Experience 
+			<!-- Experience
 				<section id="experience" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+					<span class="image fit main bottom"></span>
 					<div class="content">
 						<header>
 							<h2>Experience</h2>
@@ -124,8 +127,9 @@
 					<a href="#education" class="goto-next scrolly">Next</a>
 				</section>
 -->
-			<!-- Education -->
-				<!--<section id="education" class="spotlight style2 right">
+
+			<!-- Education
+				<section id="education" class="spotlight style2 right">
 					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
 					<div class="content">
 						<header>
@@ -144,7 +148,8 @@
 						</ul>
 					</div>
 					<a href="#projects" class="goto-next scrolly">Next</a>
-				</section>-->
+				</section>
+-->
 			<!-- Projects 
 				<section id="projects" class="wrapper style1 special fade-up">
 					<div class="container">
@@ -225,45 +230,47 @@
 							</div>
 						</div>
 					</div>
-					<!-- <a href="#contact" class="goto-next scrolly">Next</a> -->
-					<a href="#footer" class="goto-next scrolly">Next</a>
-				</section>
+					<!--<a href="#contact" class="goto-next scrolly">Next</a>
+				</section>-->
 
-			<!-- Contact 
-				/!\ Impossible si hosté sur Github (Github Pages ne supporte pas le PHP)
+			<!-- Contact
 				<section id="contact" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
 							<h2>Contact</h2>
 							<p>Feel free to contact me using the form below.</p>
 						</header>
-						<form method="post" action="contact.php" class="container 50%">
+						<form id="contact-form" name="contact" method="post" action="contact.php" class="container 50%">
 							<div class="row uniform 50%">
 								<div class="6u 12u$(xsmall)">
-									<input type="text" name="name" id="name" value="" placeholder="Your name" />
+									<input type="text" name="name" id="name" value="" placeholder="Your name" required/>
+                                    <p class="error-msg hide"></p>
 								</div>
 								<div class="6u$ 12u$(xsmall)">
-									<input type="email" name="email" id="email" value="" placeholder="Your email address" />
+									<input type="email" name="email" id="email" value="" placeholder="Your email address" required/>
+                                    <p class="error-msg hide"></p>
 								</div>
 								<div class="12u$">
-									<input type="text" name="title" id="title" value="" placeholder="Your subject" />
+									<input type="text" name="subject" id="subject" value="" placeholder="Your subject" required/>
+                                    <p class="error-msg hide"></p>
 								</div>
 								<div class="12u$">
-									<textarea name="message" id="message" placeholder="Your message" rows="6"></textarea>
-								</div>
-								TODO: ajouter captcha
+									<textarea name="message" id="message" placeholder="Your message" rows="6" required></textarea>
+                                    <p class="error-msg hide"></p>
+								</div>-->
+								<!-- Piège -->
+                                <!--<input type="text" name="phone" id="message" value="" placeholder="Your phone" class="hide" tabindex="-1" autocomplete="nope">
 								<div class="12u$">
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
-										<li><input type="reset" value="Reset" /></li>
+										<li><input type="submit" value="Send Message" class="special" onclick="validateForm('contact')"/></li>
+										<li><input type="reset" value="Reset" onclick="resetForm('contact')"/></li>
 									</ul>
 								</div>
 							</div>
 						</form>
-					</div>
+					</div> -->
+                    <a href="#footer" class="goto-next scrolly">Next</a>
 				</section>
-			-->
-
 			<!-- Footer -->
 			<!-- TODO: corriger défaut image qui dépasse quand hauteur fenetre trop petite -->
 				<footer id="footer">
@@ -275,7 +282,7 @@
 							<li><a href="skype:justine.ventalon?userinfo" class="icon alt fa-skype"><span class="label">Skype</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Justine Ventalon 2016</li>
+						<li>&copy; Justine Ventalon 2018</li>
 						<li>Design based on Landed by <a href="https://html5up.net/">HTML5 UP</a></li>
 						<!--<li>2016</li>-->
 					</ul>
@@ -293,6 +300,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+            <!--<script src="assets/js/forms.js"></script>-->
 	</body>
 </html>
