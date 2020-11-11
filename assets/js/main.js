@@ -121,16 +121,16 @@
                     spotlight.find('.section, .buttons').each(function () {
                         $(this).toggleClass('hidden').toggleClass('active');
                     });
+                    spotlight.animate({ "left": "-=" + window.innerWidth }, 'slow');
                 });
-                spotlight.animate({ "left": "-=" + window.innerWidth }, 'slow');
             } else {
                 spotlight.animate({ "right": "+=" + window.innerWidth }, 'slow', function() {
                     spotlight.each(setBackground);
                     spotlight.find('.section, .buttons').each(function () {
                         $(this).toggleClass('hidden').toggleClass('active');
                     });
+                    spotlight.animate({ "right": "-=" + window.innerWidth }, 'slow');
                 });
-                spotlight.animate({ "right": "-=" + window.innerWidth }, 'slow');
             }
 		});
 
