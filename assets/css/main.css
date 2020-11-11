@@ -3056,16 +3056,44 @@
 		}
 
 		.spotlight.style2 .content {
-			border-color: #7755f2;
+			border-color: #5480f1/*#7755f2*/;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: #5480f1/*#39c088*/;
 		}
 
 		.spotlight.inactive .content {
 			opacity: 0;
 		}
+		
+		.spotlight .content .buttons {
+			text-align: center;
+		}
+		
+		.spotlight .content .buttons i {
+			cursor: pointer;
+		}
+		
+		.spotlight .hidden {
+			display: none;
+		}
+		
+		.spotlight .content .buttons i:first-child {
+			margin-right: 5px;
+		}
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 20px !important;
+        }
+
+        .spotlight .content .buttons {
+            position: relative;
+            margin-bottom: 10px;
+        }
 
 		.spotlight.inactive .goto-next {
 			-moz-transform: translate(0,1.5em);
